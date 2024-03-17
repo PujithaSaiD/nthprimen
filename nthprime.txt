@@ -1,0 +1,13 @@
+n=int(input())
+count=0
+candidate=1
+while count<n:
+  candidate+=1
+  prime=True
+  for i in range(2,(n//2)+1):
+    if(candidate%i)==0:
+      prime=False
+      break
+  if prime:
+    count+=1
+print(candidate)
